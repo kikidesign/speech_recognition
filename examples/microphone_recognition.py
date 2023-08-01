@@ -57,7 +57,7 @@ except sr.RequestError as e:
     print("Could not request results from Microsoft Bing Voice Recognition service; {0}".format(e))
 
 # recognize speech using Microsoft Azure Speech
-AZURE_SPEECH_KEY = "INSERT AZURE SPEECH API KEY HERE"  # Microsoft Speech API keys 32-character lowercase hexadecimal strings
+AZURE_SPEECH_KEY = "f2fd283c893c4a578c1f7ab3f3695b90"  # Microsoft Speech API keys 32-character lowercase hexadecimal strings
 try:
     print("Microsoft Azure Speech thinks you said " + r.recognize_azure(audio, key=AZURE_SPEECH_KEY))
 except sr.UnknownValueError:
